@@ -34,6 +34,17 @@ SELECT name FROM country WHERE name LIKE "F%";
 
 ### Task 06
 
+SELECT name FROM country WHERE name LIKE "%F%";
+
+![task_06](https://github.com/user-attachments/assets/793ca310-c177-406f-9bf9-a73cd5ba2acc)
+
+### Task 07
+
+SELECT location FROM game WHERE screen_name = "Vesa";
+
+![task_07](https://github.com/user-attachments/assets/9d639578-c2e0-49ed-9f41-adc0976f83fb)
+
+### Task 08
 
 
 
