@@ -46,6 +46,30 @@ SELECT location FROM game WHERE screen_name = "Vesa";
 
 ### Task 08
 
+SELECT co2_consumed FROM game WHERE screen_name = "Ilkka";
+
+![task_08](https://github.com/user-attachments/assets/f8a2cf2e-0fc2-4f48-ad5b-e3797bdf36ce)
+
+### Task 09
+
+SELECT co2_budget FROM game LIMIT 1;
+
+![task_09](https://github.com/user-attachments/assets/75fa72ba-b983-438c-b336-2b01790ab03d)
+
+### Task 10
+
+SET @co2_budget := (SELECT co2_budget FROM game WHERE screen_name = "Ilkka");
+SET @co2_consumed := (SELECT co2_consumed FROM game WHERE screen_name = "Ilkka");
+SELECT screen_name, 
+		@co2_budget AS co2_budget, 
+		@co2_consumed AS co2_consumed, 
+		(@co2_budget - @co2_consumed) AS co2_left FROM game WHERE screen_name = "Ilkka";
+
+  ![task_10](https://github.com/user-attachments/assets/99672137-b6ef-4f74-bc86-f778238187df)
+
+
+
+
 
 
 
