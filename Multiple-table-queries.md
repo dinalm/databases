@@ -20,3 +20,31 @@ WHERE country.name = "France" AND airport.type = "large_airport";
 
 ![task_02](https://github.com/user-attachments/assets/5f2da724-80ec-4d05-84e7-2e7d927eeb51)
 
+### Task 03
+
+SELECT country.name AS "country_name", airport.name AS "airport_name"
+FROM country 
+JOIN airport ON country.iso_country = airport.iso_country
+WHERE country.continent = "AN";
+
+![task_03](https://github.com/user-attachments/assets/e99d38f3-ad57-4e74-9888-70a45ded1825)
+
+### Task 04
+
+SELECT airport.elevation_ft 
+FROM airport 
+JOIN game ON airport.ident = game.location 
+WHERE screen_name = "Heini";
+
+![task_04](https://github.com/user-attachments/assets/07a6a94a-6f93-4eda-b433-a1b887487e1d)
+
+### Task 05
+
+
+
+
+
+
+
+
+
