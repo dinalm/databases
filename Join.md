@@ -28,6 +28,29 @@ INNER JOIN country ON country.iso_country = airport.iso_country;
 
 ![task_03](https://github.com/user-attachments/assets/7ae3f6b4-7e9c-4126-af88-c020c72569e5)
 
+### Task 04
+
+SELECT airport.name, game.screen_name
+FROM airport
+LEFT JOIN game ON game.location = airport.ident
+WHERE airport.name LIKE "%Hels%";
+
+![task_04](https://github.com/user-attachments/assets/7d5c5c29-adde-48ba-a78b-78fcad8f9b4b)
+
+### Task 05
+
+SELECT goal.name, game.screen_name
+FROM goal_reached
+LEFT JOIN game ON game.id = goal_reached.game_id
+RIGHT JOIN goal ON goal.id = goal_reached.goal_id;
+
+![task_05](https://github.com/user-attachments/assets/e2a98d56-6e3a-43b8-868b-555c0aba01db)
+
+
+
+
+
+
 
 
 
