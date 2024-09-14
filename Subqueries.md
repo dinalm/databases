@@ -43,9 +43,29 @@ WHERE game.id IN (
 
 ### Task 04
 
+SELECT country.name 
+FROM country
+WHERE country.iso_country NOT IN (
+		SELECT DISTINCT airport.iso_country
+		FROM airport
+		);
 
+![task_04](https://github.com/user-attachments/assets/ca32df4a-0408-4cb7-8718-be6f76729749)
 
+### Task 05
 
+SELECT goal.name 
+FROM goal
+WHERE goal.id NOT IN (
+		SELECT goal_reached.goal_id
+		FROM goal_reached
+		WHERE goal_reached.game_id IN (
+			SELECT game.id
+			FROM game
+			WHERE game.screen_name = "Heini"
+		));
+
+![task_05](https://github.com/user-attachments/assets/69bf565a-73e8-4848-b951-69fc8bcdfb85)
 
 
 
